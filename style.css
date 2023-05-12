@@ -7,14 +7,16 @@
 
 :root {
     --cor-primaria: #000000;
-    --cor-secundaria: #52057B;
-    --cor-terciaria: #892CDC;
-    --cor-quaternaria: #BC6FF1;
+    --cor-secundaria: #150050;
+    --cor-terciaria: #3F0071;
+    --cor-quaternaria: #610094;
 }
 
 body {
     background-color: var(--cor-primaria);
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -48,12 +50,6 @@ h2 {
     margin-right: 30px;
 }
 
-#navs {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-}
-
 #nave {
     display: flex;
     gap: 50px;
@@ -64,18 +60,20 @@ h2 {
     color: white;
     border-bottom: 1px solid white;
     padding: 8px;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
+    width: 100px;
 }
 
 .navlinks:hover {
         /* background-color: white;
         color: black; */
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
     border-bottom-width: 5px;
+    padding: 0px 0px 15px 0px;
 }
 
-form {
+#procurar > form {
     display: flex;
     align-items: center;
     background-color: black;
@@ -145,7 +143,7 @@ form {
 }
 
 .custojogo {
-    color: var(--cor-terciaria);
+    color: rgb(218, 132, 218);
 }
 
 .botaocompra {
@@ -160,7 +158,7 @@ form {
 
 .comprar {
     text-decoration: none;
-    color: var(--cor-quaternaria);
+    color: rgb(218, 132, 218);
 }
 
 .comprar:hover {
@@ -170,6 +168,7 @@ form {
 #filtros {
     background-color: black;
     padding-right: 10px;
+    margin-left: 40px;
 }
 
 #buscapor {
@@ -194,4 +193,115 @@ tr {
     justify-content: space-between;
 }
 
+footer {
+    background-color: var(--cor-secundaria);
+    /* text-align: center; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
 
+#direitosreservados {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulorecuros {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.linksrecursos {
+    display: flex;
+    padding: 10px;
+    /* flex-direction: column; */
+
+}
+
+.linkspe {
+    list-style: inside;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.linkspes {
+    text-decoration: none;
+    color: white;
+}
+
+.linkspes:hover {
+    color: grey;
+}
+
+#parape {
+    min-width: 300px;
+    width: 600px;
+    text-align: justify;
+}
+
+#noticias {
+    display: flex;
+    align-items: flex-end;
+    background-image: url('https://eitrawmaterials.eu/wp-content/uploads/2020/06/Internet-and-technology-concept.jpg');
+    background-size: contain;
+    /* background-attachment: fixed; */
+    /* background-position: top; */
+    font-size: 150%;
+    width: 600px;
+    height: 300px;
+    color: red;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.262);
+}
+
+#noticias_info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-end;
+    padding: 20px;
+    /* align-items: flex-end; */
+    background-color: var(--cor-terciaria);
+    color: white;
+    height: 130px;
+    
+}
+
+#inscricao {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#inscricao > form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#idemail {
+    padding: 3px 3px 3px 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#botaoinscricao {
+    background-color: greenyellow;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+
+#botaoinscricao:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}

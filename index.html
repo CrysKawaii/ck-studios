@@ -8,18 +8,84 @@
       rel="stylesheet">
       <link rel="stylesheet" href="style.css">
     <title>C.K.S</title>
+    <style>
+        @media screen and (orientation: portrait) {
+            main, #principal {
+                margin: auto;
+                display: block;
+            }
+
+            header {
+                padding: 0px;
+                display: block;
+            }
+
+            #logolink {
+                display: block;
+            }
+
+            #logo {
+                display: flex;
+                margin: auto;
+            }
+
+            #nave {
+                display: block;
+                /* justify-content: space-evenly;
+                gap: 0px; */
+            }
+
+            #procurar {
+                display: none;
+            }
+
+            .navlinks {
+                width: 50px;
+                margin-left: 20px;
+                padding: 0px;
+            }
+
+            .listajogos {
+                width: 230px;
+                margin: auto;
+            }
+
+            .jogos {
+                flex-direction: column;
+            }
+
+            .itemli {
+                width: 210px;
+            }
+
+            #filtros {
+                display: none;
+            }
+
+            footer {
+                display: block;
+                padding: 3px;
+            }
+
+            #parape {
+                width: 250px;
+            }
+
+            #noticias {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div id="logolink">
             <img id="logo" src="assets/images/logotipo.png" alt="Logotipo">
-                <div id="nav">
-                    <nav id="nave">
-                        <a class="navlinks" href="#">Home</a>
-                        <a class="navlinks" href="#">Navegar</a>
-                        <a class="navlinks" href="#">Novidades</a>
-                    </nav>
-                </div>
+            <nav id="nave">
+                <a class="navlinks" href="#">Home</a>
+                <a class="navlinks" href="#">Navegar</a>
+                <a class="navlinks" href="#">Novidades</a>
+            </nav>
         </div>
         <div id="procurar">
             <form action="#">
@@ -29,7 +95,7 @@
         </div>
 </header>
     <main>
-        <div style="margin-right: 20px;">
+        <div id="principal" style="margin-right: 20px;">
             <h2 id="genero">Populares</h2>
             <section class="listajogos">
                     <ul class="jogos">
@@ -221,7 +287,60 @@
         </section>
     </main>
     <footer>
+        <div id="direitosreservados">
+            <h6 class="titulorecuros">Recursos</h6>
+            <div class="linksrecursos">
+                <div>
+                    <ul class="linkspe">
+                        <li><a class="linkspes" href="#">Seja um apoiador</a></li>
+                        <li><a class="linkspes" href="#">Contate-nos</a></li>
+                        <li><a class="linkspes" href="#">Carreiras</a></li>
+                        <li><a class="linkspes" href="#">Empresas</a></li>
+                        <li><a class="linkspes" href="#">Distribuir na C.K</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="linkspe">
+                        <li><a class="linkspes" href="#">Poçitíca de Fanart</a></li>
+                        <li><a class="linkspes" href="#">UX Reseache</a></li>
+                        <li><a class="linkspes" href="#">EULA da loja</a></li>
+                        <li><a class="linkspes" href="#">Serviços on-line</a></li>
+                        <li><a class="linkspes" href="#">Regras da comunidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h6 class="titulorecuros">Feitos pela C.K Studios</h6>
+            <div class="linksrecursos">
+                <div>
+                    <ul class="linkspe">
+                        <li><a class="linkspes" href="#">Zombielando</a></li>
+                        <li><a class="linkspes" href="#">Nitrado</a></li>
+                        <li><a class="linkspes" href="#">Invade Naite</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="linkspe">
+                        <li><a class="linkspes" href="#">Miopiasss</a></li>
+                        <li><a class="linkspes" href="#">Astamatma</a></li>
+                        <li><a class="linkspes" href="#">Optic</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="parape">© 2023, C.K Studios, Inc. Todos os direitos reservados. C.K, C.K Studios, o logotipo da C.K Studios, Chronoo Trigger, o logotipo do Chrono Trigger, Unreal, Unreal Engine, o logotipo do Unreal Engine, Unreal Tournament e o logotipo do Unreal Tournament são marcas comerciais ou registradas da C.K Studios, Inc. no Brasil da América e em outros lugares. Outras marcas e nomes de produtos são marcas registradas de seus respectivos donos.</p>
+        </div>
 
+        <div id="noticias">
+            <div id="noticias_info">
+                <p>Cadastre seu E-mail para receber notícias e avisos sbore nossos jogos e distrubuidoras todas as semanas!</p>
+                <div id="inscricao">
+                    <form action="#">
+                        <label style="margin-bottom: 4px;" for="idemail">Inscreva-se:</label>
+                        <input type="email" name="email" id="idemail" placeholder="insira seu e-mail">
+                        <input id="botaoinscricao" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
